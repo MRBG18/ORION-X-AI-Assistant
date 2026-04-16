@@ -7,7 +7,7 @@
 
 <!-- ANIMATED TYPING TITLE -->
 <a href="#">
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=26&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=true&width=860&height=90&lines=Intelligent+%E2%80%A2+Autonomous+%E2%80%A2+Adaptive+%E2%80%A2+Aware;NLP+%7C+Machine+Learning+%7C+Voice+%7C+GUI+%7C+Automation;Built+by+Bhargav+Gondaliya+%E2%80%94+AI+%2F+ML+Engineer" alt="ORION X Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=26&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=true&width=860&height=120&lines=Intelligent+%E2%80%A2+Autonomous+%E2%80%A2+Adaptive+%E2%80%A2+Aware;NLP+%7C+Machine+Learning+%7C+Voice+%7C+GUI+%7C+Automation;Built+by+Bhargav+Gondaliya+%E2%80%94+AI+%2F+ML+Engineer" alt="ORION X Typing SVG"/>
 </a>
 
 
