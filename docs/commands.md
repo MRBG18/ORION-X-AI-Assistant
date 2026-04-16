@@ -250,7 +250,7 @@ File      : skills/ml_models/models/marks_prediction_model.joblib
 
 ## 💼 08 · Salary Prediction (ML)
 
-> Forecasts expected salary based on years of professional experience. Model: `salary_predictor.py` using `salary_model.joblib`.
+> Forecasts expected salary based on years of professional experience. Model: `salary_predictor` using `salary_model.joblib`.
 
 ```
 salary after 1 year experience
@@ -290,7 +290,7 @@ File      : skills/ml_models/models/salary_model.joblib
 
 ## 📧 09 · Email Spam Detection
 
-> Classify raw email text as spam or legitimate using a trained NLP classifier. Model: `spam_predictor.py` using `spam_model.joblib`.
+> Classify raw email text as spam or legitimate using a trained NLP classifier. Model: `spam_predictor` using `spam_model.joblib`.
 
 **Syntax:** `<trigger> - <email body text>`
 
@@ -339,7 +339,7 @@ email is -
 
 ## 😊 10 · Sentiment Analysis
 
-> Detect the emotional tone of any text. Model: `sentiment_predictor.py` using `sentiment_model.joblib`.
+> Detect the emotional tone of any text. Model: `sentiment_predictor` using `sentiment_model.joblib`.
 
 **Syntax:** `<trigger> - <text to analyze>`
 
