@@ -1,49 +1,43 @@
 <div align="center">
 
-# ⚡ ORION X — Complete Command Reference
+# 📋 ORION X — Complete Command Reference
 
-<img src="https://img.shields.io/badge/Commands-100%2B-7C3AED?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Modules-10%2B-3B82F6?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/NLP%20Powered-spaCy%20%2B%20TF--IDF-22C55E?style=for-the-badge"/>
+*Every command, every feature, fully documented.*
+
+[![Back to README](https://img.shields.io/badge/←_Back_to_README-1E293B?style=flat-square)](../README.md)
 
 </div>
 
------
-
-> 📌 **How to Read This Guide**
-> 
-> - Commands shown in `code blocks` are exact inputs you can type or speak
-> - `[value]` means replace with your own input
-> - All commands work in **GUI**, **CLI**, and **Voice** modes
-
------
+---
 
 ## 📑 Table of Contents
 
-|# |Module                                                           |Commands|
-|--|-----------------------------------------------------------------|--------|
-|1 |[👋 Greetings & Conversation](#-greetings--conversation)          |12      |
-|2 |[🖥️ App Control — Open](#️-app-control--open)                      |9       |
-|3 |[🔍 Application Discovery](#-application-discovery)               |5       |
-|4 |[🛑 App Control — Close](#-app-control--close)                    |6       |
-|5 |[📁 File & Folder Search](#-file--folder-search)                  |10      |
-|6 |[🌐 Web Search](#-web-search)                                     |11      |
-|7 |[📊 Marks Prediction (ML)](#-marks-prediction-ml)                 |7       |
-|8 |[💼 Salary Prediction (ML)](#-salary-prediction-ml)               |8       |
-|9 |[📧 Email Spam Detection](#-email-spam-detection)                 |8       |
-|10|[😊 Sentiment Analysis](#-sentiment-analysis)                     |8       |
-|11|[⏰ Reminders & Alerts](#-reminders--alerts)                      |9       |
-|12|[🤝 Meeting Planner](#-meeting-planner)                           |5       |
-|13|[🧮 Advanced Mathematics](#-advanced-mathematics)                 |21      |
-|14|[🧠 Smart Help / Capability Guide](#-smart-help--capability-guide)|10      |
-|15|[🔁 Daily Routine](#-daily-smart-routine)                         |4       |
-|16|[💡 Skill Suggestion Engine](#-skill-suggestion-engine)           |3       |
+| # | Category | Commands |
+|---|----------|---------|
+| 01 | [👋 Greeting & Conversation](#-01--greeting--conversation) | hey, hello, thanks, bye... |
+| 02 | [🖥️ App & Software Control](#️-02--app--software-control) | open chrome, open vscode... |
+| 03 | [🔍 Application Discovery](#-03--application-discovery) | list apps, count apps... |
+| 04 | [🛑 Application Termination](#-04--application-termination) | close chrome, force quit... |
+| 05 | [📁 File & Folder Search](#-05--file--folder-search) | find Main.py, where is... |
+| 06 | [🌐 Web Search](#-06--web-search) | google X, search youtube... |
+| 07 | [📊 Marks Prediction (ML)](#-07--marks-prediction-ml) | if i study for N hours... |
+| 08 | [💼 Salary Prediction (ML)](#-08--salary-prediction-ml) | salary after N years... |
+| 09 | [📧 Email Spam Detection](#-09--email-spam-detection) | check email - ... |
+| 10 | [😊 Sentiment Analysis](#-10--sentiment-analysis) | check sentiment - ... |
+| 11 | [⏰ Reminders & Alerts](#-11--reminders--alerts) | remind me in X minutes... |
+| 12 | [🤝 Meeting Planner](#-12--meeting-planner) | schedule a meeting with... |
+| 13 | [🧮 Advanced Mathematics](#-13--advanced-mathematics) | sqrt, average, min, max... |
+| 14 | [🧠 Smart Help & Guidance](#-14--smart-help--guidance) | what can you do, help me... |
+| 15 | [🔁 Daily Smart Routine](#-15--daily-smart-routine) | start my day, today summary... |
+| 16 | [💡 Skill Suggestion Engine](#-16--skill-suggestion-engine) | i feel stressed... |
 
------
+---
 
-## 👋 Greetings & Conversation
+<br/>
 
-> Handles casual conversation, pleasantries, and social interactions.
+## 👋 01 · Greeting & Conversation
+
+> ORION X handles casual conversation naturally — no special syntax required.
 
 ```
 hey
@@ -60,13 +54,13 @@ goodbye
 see you later
 ```
 
-**Expected Behavior:** ORION X responds with context-aware, friendly replies. `good morning` triggers the daily routine module.
+---
 
------
+<br/>
 
-## 🖥️ App Control — Open
+## 🖥️ 02 · App & Software Control
 
-> Launch any installed application by name. Supports aliases and full names.
+> Launch any installed application using natural language.
 
 ```
 open chrome
@@ -80,20 +74,18 @@ open notepad
 open terminal
 ```
 
-**Supported Aliases:**
+**How it works:**
+- Fuzzy matches your input to installed application names
+- Resolves aliases (e.g. `google chrome` → `chrome`)
+- Launches via OS-native subprocess call
 
-|Alias       |Resolves To       |
-|------------|------------------|
-|`chrome`    |Google Chrome     |
-|`vscode`    |Visual Studio Code|
-|`calculator`|System Calculator |
-|`photos`    |Photos App        |
+---
 
------
+<br/>
 
-## 🔍 Application Discovery
+## 🔍 03 · Application Discovery
 
-> Inspect what’s installed on the system.
+> Explore what's installed on the system without opening a file manager.
 
 ```
 list apps
@@ -103,13 +95,13 @@ how many apps are installed
 count apps
 ```
 
-**Expected Output:** Returns a count and/or enumerated list of installed applications on the system.
+---
 
------
+<br/>
 
-## 🛑 App Control — Close
+## 🛑 04 · Application Termination
 
-> Terminate running applications gracefully or by force.
+> Close, quit, or force-kill running applications.
 
 ```
 close chrome
@@ -120,18 +112,18 @@ force close chrome
 force close vscode
 ```
 
-**Verb Mapping:**
+| Command Type | Behavior |
+|-------------|----------|
+| `close / quit / exit` | Graceful shutdown (sends quit signal) |
+| `force close` | Immediate termination (kills process) |
 
-|Verb                     |Behavior              |
-|-------------------------|----------------------|
-|`close` / `quit` / `exit`|Graceful termination  |
-|`force close`            |Immediate process kill|
+---
 
------
+<br/>
 
-## 📁 File & Folder Search
+## 📁 05 · File & Folder Search
 
-> Locate files and folders anywhere on the system by name, keyword, or extension.
+> Locate any file or folder on your system using natural language.
 
 ```
 find Main.py
@@ -146,45 +138,48 @@ find assets
 find controller.py
 ```
 
-**Tips:**
+**Supported patterns:**
+- Exact filename: `find Main.py`
+- Keyword search: `find resume` (matches all files with "resume" in name)
+- Natural question: `where is orion_x_logo.png`
+- Category terms: `find data file`, `find config file`
 
-- Use partial names: `find resume` will match `resume_v2.pdf`, `my_resume.docx`, etc.
-- Extension search: `find .json` returns all JSON files
-- Keyword search: `find config` matches any file with “config” in the name
+---
 
------
+<br/>
 
-## 🌐 Web Search
+## 🌐 06 · Web Search
 
-> Open Google or YouTube searches directly from voice or text.
+> Instantly search Google or YouTube from a voice or text command.
+
+### Google Search
 
 ```
 search google for python tutorials
 google python tutorial
 google machine learning basics
+google weather today
+google latest tech news
+search Virat Kohli
+search king of cricket
+```
+
+### YouTube Search & Playback
+
+```
 search youtube for python full course
 search youtube for ai projects
 open youtube and search tmkoc
 youtube play music
-search Virat Kohli
-search king of cricket
-google weather today
-google latest tech news
 ```
 
-**Routing Logic:**
+---
 
-```
-google [query]        →  Opens google.com/search?q=[query]
-youtube [query]       →  Opens youtube.com/search?q=[query]
-youtube play [topic]  →  Opens YouTube and plays first result
-```
+<br/>
 
------
+## 📊 07 · Marks Prediction (ML)
 
-## 📊 Marks Prediction (ML)
-
-> Predicts exam score based on study hours using a trained regression model.
+> Regression model trained to predict academic marks based on study hours.
 
 ```
 if i study for 4 hours
@@ -196,25 +191,19 @@ study for 10 hours
 what if i study 7 hours
 ```
 
-**Model Info:**
-
-- Algorithm: Linear / Polynomial Regression
+**Model details:**
+- Algorithm: Linear Regression
 - Input: Study hours (numeric)
-- Output: Predicted marks out of 100
+- Output: Predicted score / percentage
+- Trained on: Student performance dataset
 
-**Sample Predictions:**
+---
 
-|Hours|Predicted Score|
-|-----|---------------|
-|3h   |~58 / 100      |
-|6h   |~76 / 100      |
-|10h  |~94 / 100      |
+<br/>
 
------
+## 💼 08 · Salary Prediction (ML)
 
-## 💼 Salary Prediction (ML)
-
-> Estimates salary based on years of work experience using a trained model.
+> Forecasts expected salary based on years of professional experience.
 
 ```
 salary after 1 year experience
@@ -227,25 +216,21 @@ expected salary with 4 years experience
 salary with 6 years experience
 ```
 
-**Model Info:**
-
+**Model details:**
 - Algorithm: Linear Regression
-- Input: Years of experience (numeric, supports decimals)
-- Output: Estimated annual salary (₹ LPA)
+- Input: Years of experience (supports decimals like `2.5`)
+- Output: Predicted salary (INR / annual)
+- Trained on: Experience-salary benchmark dataset
 
-**Sample Predictions:**
+---
 
-|Experience|Estimated Salary|
-|----------|----------------|
-|1 year    |~₹3.5 LPA       |
-|5 years   |~₹8.2 LPA       |
-|10 years  |~₹18.5 LPA      |
+<br/>
 
------
+## 📧 09 · Email Spam Detection
 
-## 📧 Email Spam Detection
+> Classify raw email text as **Spam** or **Not Spam** using NLP.
 
-> Classifies email content as spam or legitimate using NLP classification.
+**Syntax:** `check email - <email body text>`
 
 ```
 check email - hey bg how are you
@@ -258,22 +243,25 @@ email is - limited offer act fast
 check email - invoice for your purchase
 ```
 
-**Input Format:** `check email - [email text]`
+**Trigger phrases:**
+```
+check email -
+does mail is spam -
+received email is -
+email is -
+```
 
-**Classification Labels:**
+**Output:** `✅ Not Spam` or `🚨 Spam Detected`
 
-|Label       |Confidence Threshold|
-|------------|--------------------|
-|🚨 SPAM      |> 0.6 probability   |
-|✅ LEGITIMATE|> 0.6 probability   |
+---
 
-**Spam Indicators Detected:** prize/win/reward language, urgent CTAs, suspicious links, financial promises.
+<br/>
 
------
+## 😊 10 · Sentiment Analysis
 
-## 😊 Sentiment Analysis
+> Detect the emotional tone of any piece of text.
 
-> Detects the emotional tone of any text — positive, negative, or neutral.
+**Syntax:** `<trigger> - <text to analyze>`
 
 ```
 check sentiment - i feel very happy today
@@ -286,77 +274,94 @@ detect sentiment - i love ORION X
 sentiment of this - i am disappointed
 ```
 
-**Input Format:** `[trigger] - [text to analyze]`
-
-**Trigger Words:** `check sentiment`, `analyze sentiment`, `detect sentiment`, `sentiment of this`
-
-**Output Scale:**
-
+**Trigger phrases:**
 ```
-😊 POSITIVE   →  score: 0.7 to 1.0
-😐 NEUTRAL    →  score: 0.4 to 0.7
-😟 NEGATIVE   →  score: 0.0 to 0.4
+check sentiment -
+analyze sentiment -
+detect sentiment -
+sentiment of this -
 ```
 
------
+**Output classes:** `😊 Positive` · `😐 Neutral` · `😞 Negative`
 
-## ⏰ Reminders & Alerts
+---
 
-> Set smart reminders by relative time or exact clock time.
+<br/>
+
+## ⏰ 11 · Reminders & Alerts
+
+> Set reminders by relative countdown or absolute clock time.
+
+### Relative Reminders (countdown-based)
 
 ```
 remind me to drink water in 1 minutes
 remind me to study in 10 minutes
 set a reminder for take break in 5 minutes
 set a reminder to sleep in 30 minutes
+```
+
+### Absolute Reminders (clock-based)
+
+```
 remind me at 7:30 am
 remind me at 2:15 pm
 set reminder at 14:45
 set reminder at 18:00
+```
+
+### View Reminders
+
+```
 show reminders
 ```
 
-**Formats Supported:**
+**Storage:** All reminders saved to `reminders.json` — persistent across sessions.
 
-|Format            |Example                   |
-|------------------|--------------------------|
-|Relative (minutes)|`remind me in [N] minutes`|
-|Absolute (12h)    |`remind me at 7:30 am`    |
-|Absolute (24h)    |`set reminder at 14:45`   |
-|List all          |`show reminders`          |
+---
 
-**Storage:** Reminders persisted in `reminders.json` with timestamp and label.
+<br/>
 
------
+## 🤝 12 · Meeting Planner
 
-## 🤝 Meeting Planner
+> Schedule and manage meetings with person, date, time, and topic.
 
-> Schedule, store, and retrieve meetings with person, date, time, and topic.
+### Schedule a Meeting
 
 ```
 schedule a meeting with Bhargav on 25 Jan at 9:20 pm
 schedule a meeting with Bhargav on 25 Jan at 10:11 pm for AI-ML
 plan a meeting with Rahul on 1 Feb at 11:00 am
 plan a meeting with Client on 10 Mar at 4:30 pm for Bank Discussion
+```
+
+**Syntax breakdown:**
+```
+schedule/plan a meeting with <name> on <date> at <time> [for <topic>]
+```
+
+| Field | Example |
+|-------|---------|
+| Person | `Bhargav`, `Rahul`, `Client` |
+| Date | `25 Jan`, `1 Feb`, `10 Mar` |
+| Time | `9:20 pm`, `11:00 am`, `14:45` |
+| Topic (optional) | `AI-ML`, `Bank Discussion` |
+
+### View Meetings
+
+```
 show meetings
 ```
 
-**Parsed Fields:**
+**Storage:** All meetings saved to `meetings.json` — persistent across sessions.
 
-|Field |Extracted From          |
-|------|------------------------|
-|Person|`with [Name]`           |
-|Date  |`on [Day Month]`        |
-|Time  |`at [HH:MM am/pm]`      |
-|Topic |`for [Topic]` (optional)|
+---
 
-**Storage:** Persisted in `meetings.json` with full structured data.
+<br/>
 
------
+## 🧮 13 · Advanced Mathematics
 
-## 🧮 Advanced Mathematics
-
-> Full-featured math engine supporting natural language expressions.
+> Full arithmetic engine with statistical functions, all from natural language.
 
 ### Basic Arithmetic
 
@@ -370,53 +375,64 @@ show meetings
 1224331-555-5555-55
 ```
 
-### Statistics
+### Statistical Operations
 
 ```
 average of 10 20 30
 average of 10 20 30 40
 average of 12 18
+min of 10 5 20
+min of 3 8 1 9
+max of 10 5 20
+max of 45 22 89 11
 ```
 
-### Percentage
+### Percentage & Score Calculator
 
 ```
-total marks is 500 i got 450       →  90%
-total marks is 600 i got 420       →  70%
+total marks is 500 i got 450
+total marks is 600 i got 420
 ```
 
-### Difference
+### Difference Calculator
 
 ```
-difference between 600 and 470     →  130
-difference between 1000 and 845    →  155
-```
-
-### Min / Max
-
-```
-min of 10 5 20                     →  5
-min of 3 8 1 9                     →  1
-max of 10 5 20                     →  20
-max of 45 22 89 11                 →  89
+difference between 600 and 470
+difference between 1000 and 845
 ```
 
 ### Square Root
 
 ```
-sqrt 144                           →  12.0
-sqrt 256                           →  16.0
-sqrt 81                            →  9.0
+sqrt 144
+sqrt 256
+sqrt 81
 ```
 
-**Supported Natural Language Keywords:**
-`plus`, `minus`, `multiply`, `divided by`, `average of`, `min of`, `max of`, `sqrt`, `difference between`, `total marks`, `i got`
+**Supported operations:**
 
------
+| Operation | Syntax Example | Result |
+|-----------|---------------|--------|
+| Addition | `12 plus 5` | `17` |
+| Subtraction | `100 minus 40` | `60` |
+| Multiplication | `25 multiply 4` | `100` |
+| Division | `100 divided by 4` | `25.0` |
+| Average | `average of 10 20 30` | `20.0` |
+| Min | `min of 3 8 1` | `1` |
+| Max | `max of 45 22 89` | `89` |
+| Percentage | `total marks is 500 i got 450` | `90.0%` |
+| Difference | `difference between 1000 and 845` | `155` |
+| Square Root | `sqrt 144` | `12.0` |
 
-## 🧠 Smart Help / Capability Guide
+---
 
-> Discover what ORION X can do and get module-specific explanations.
+<br/>
+
+## 🧠 14 · Smart Help & Guidance
+
+> Explore ORION X's capabilities interactively — built-in assistant guide.
+
+### General Help
 
 ```
 what can you do?
@@ -424,6 +440,11 @@ show commands
 help me
 what features do you have
 how to use orion x
+```
+
+### Feature-Specific Explanations
+
+```
 what is - web search
 what is - reminders
 what is - sentiment analysis
@@ -431,18 +452,15 @@ what is - salary prediction
 what is - advanced mathematics
 ```
 
-**`what is - [module]` explains:**
+**Syntax:** `what is - <feature name>`
 
-- What the module does
-- How to use it
-- Example commands
-- Expected output format
+---
 
------
+<br/>
 
-## 🔁 Daily Smart Routine
+## 🔁 15 · Daily Smart Routine
 
-> Start your day with a smart briefing from ORION X.
+> Get an intelligent morning briefing or end-of-day summary.
 
 ```
 start my day
@@ -451,19 +469,19 @@ daily routine
 today summary
 ```
 
-**Routine includes:**
+**What it includes:**
+- Current date & time greeting
+- Pending reminders
+- Scheduled meetings for today
+- Motivational prompt or tip
 
-- 🕐 Current time and date
-- ☁️ Weather summary (if connected)
-- 📋 Pending reminders for today
-- 🤝 Meetings scheduled for today
-- 💡 Motivational tip or suggestion
+---
 
------
+<br/>
 
-## 💡 Skill Suggestion Engine
+## 💡 16 · Skill Suggestion Engine
 
-> Detects emotional cues and proactively offers personalized suggestions.
+> ORION X detects your mood or context and proactively suggests relevant features.
 
 ```
 i feel stressed
@@ -471,25 +489,47 @@ i feel very bad today
 analyze sentiment - i am demotivated
 ```
 
-**Trigger Conditions:** Negative sentiment detected in input or explicit emotional keywords.
+**How it works:**
+1. Detects negative sentiment or mood keywords in your input
+2. Classifies emotional state (stressed / demotivated / sad / anxious)
+3. Suggests relevant ORION X features that may help (e.g. reminders, routines, study tips)
+4. Optionally runs sentiment analysis on the message itself
 
-**Response Includes:**
+---
 
-- 🌿 Wellness tip (breathing, break suggestion)
-- 📚 Productivity recommendation
-- 🎯 Motivational message
-- 🔁 Optionally prompts daily routine start
+<br/>
 
------
+---
 
 <div align="center">
 
------
+## ◈ Quick Reference Card
 
-**ORION X Command Reference** · 100+ Commands · 10+ Modules
+| 🎯 Goal | 💬 Say | 
+|--------|--------|
+| Open an app | `open <app name>` |
+| Close an app | `close <app name>` |
+| Find a file | `find <filename>` |
+| Google something | `google <query>` |
+| YouTube search | `search youtube for <query>` |
+| Set reminder | `remind me to <task> in <N> minutes` |
+| Schedule meeting | `schedule a meeting with <name> on <date> at <time>` |
+| Predict marks | `if i study for <N> hours` |
+| Predict salary | `salary after <N> year experience` |
+| Check email spam | `check email - <email text>` |
+| Analyze sentiment | `check sentiment - <text>` |
+| Do math | `average of 10 20 30` / `sqrt 144` |
+| Get help | `what can you do?` |
 
-*Built by Bhargav Gondaliya — AI/ML Engineer*
+</div>
 
------
+---
+
+<div align="center">
+
+[![Back to README](https://img.shields.io/badge/←_Back_to_README-1E293B?style=flat-square)](../README.md)
+[![Demo Video](https://img.shields.io/badge/▶_Watch_Demo-FF0000?style=flat-square&logo=youtube)](https://drive.google.com/file/d/1heV0lzODjndfy4hlWVf8q_wPRK2MtFBY/view?usp=drivesdk)
+
+*ORION X — Built by Bhargav Gondaliya*
 
 </div>
