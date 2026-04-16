@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- HERO BANNER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0015,30:1a0a3e,60:2d1b69,100:0f0c29&height=220&section=header&text=ORION%20X&fontSize=100&fontColor=ffffff&fontAlignY=38&desc=Smart AI %20AI%20Assistant%20By&descAlignY=60&descSize=24&animation=fadeIn&stroke=7C3AED&strokeWidth=2"/>
+<!-- HERO BANNER --> 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0015,30:1a0a3e,60:2d1b69,100:0f0c29&height=220&section=header&text=ORION%20X&fontSize=100&fontColor=ffffff&fontAlignY=38&desc=Autonomous%20AI%20Assistant%20System&descAlignY=60&descSize=24&animation=fadeIn&stroke=7C3AED&strokeWidth=2"/>
 
 <br/>
 
