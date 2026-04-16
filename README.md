@@ -189,11 +189,11 @@ Input:  "open chrome and search for machine learning projects"
 ║          SYSTEM AUTOMATION CAPABILITIES                       ║
 ╠══════════════════╦════════════════╦═════════════════════════╗ ║
 ║   APP CONTROL    ║  FILE SYSTEM   ║   APP DISCOVERY         ║ ║
-║ ──────────────── ║ ──────────────  ║ ──────────────────────  ║ ║
-║ ✦ Open by name  ║ ✦ Find files   ║ ✦ List all apps         ║ ║
-║ ✦ Close / Quit  ║ ✦ Locate paths ║ ✦ Count installed apps  ║ ║
-║ ✦ Force quit    ║ ✦ Folder scan  ║ ✦ Show app info         ║ ║
-║ ✦ Alias resolve ║ ✦ Keyword find ║ ✦ Fuzzy name matching   ║ ║
+║ ──────────────── ║ ────────────── ║ ──────────────────────  ║ ║
+║ ✦ Open by name   ║ ✦ Find files   ║ ✦ List all apps         ║ ║
+║ ✦ Close / Quit   ║ ✦ Locate paths ║ ✦ Count installed apps  ║ ║
+║ ✦ Force quit     ║ ✦ Folder scan  ║ ✦ Show app info         ║ ║
+║ ✦ Alias resolve  ║ ✦ Keyword find ║ ✦ Fuzzy name matching   ║ ║
 ╚══════════════════╩════════════════╩═════════════════════════╩═╝
 ```
 
@@ -223,7 +223,7 @@ Input:  "open chrome and search for machine learning projects"
 | `youtube play [content]` | YOUTUBE_PLAY | Direct YouTube playback |
 | `open youtube and search [query]` | MULTI_INTENT | Opens YT + searches |
 
-All web operations execute via `skills/automation/executors/browser_ops.py` using OS-native subprocess calls.
+All web operations execute via `browser_ops` using OS-native subprocess calls.
 
 </details>
 
@@ -258,7 +258,7 @@ Example:
   → Estimated CTC: ₹6.2 LPA
 ```
 
-Both models are pre-trained, serialized with `joblib`, and loaded at runtime from `skills/ml_models/models/`.
+Both models are pre-trained, serialized with `joblib`, and loaded at runtime from `ml_models/models/`.
 
 </details>
 
@@ -282,7 +282,7 @@ check email - invoice for your purchase
 → ✅ LEGITIMATE      (confidence: 96.8%)
 ```
 
-**Sentiment Analyzer** (`twitter_sentiment_model.joblib`)
+**Sentiment Analyzer** (`sentiment_model.joblib`)
 
 ```
 Trigger: "check sentiment - <text>"
