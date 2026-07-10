@@ -182,6 +182,7 @@ Input:  "open chrome and search for machine learning projects"
 <details>
 <summary><b>⚙️ System Automation — Apps, Files, OS Control</b></summary>
 
+
 <br/>
 
 ```
